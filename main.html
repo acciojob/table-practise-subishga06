@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+    <title>Student Details Table</title>
+    <!-- We must include CSS here as external files are disallowed and inline styling is limited for table structures -->
+    <style>
+        /* Table Border: table, th, tr, and td elements must have a 1px solid black border. */
+        table, th, tr, td {
+            border: 1px solid black;
+            /* Collapse borders to prevent double lines */
+            border-collapse: collapse; 
+            padding: 8px; /* Add some padding for readability */
+        }
+        
+        /* Table Background: The table must have a yellow background. */
+        table {
+            background-color: yellow;
+            width: 50%; /* Make the table reasonably sized */
+            margin: 20px auto; /* Center the table */
+            font-family: sans-serif;
+        }
+
+        th {
+            background-color: #fdd835; /* Slightly darker yellow for headers */
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	
+    <table>
+        <!-- Caption: The table must have a caption with the content "Student Details." -->
+        <caption>Student Details</caption>
+        
+        <thead>
+            <tr>
+                <!-- Headers: "NAME," "AGE," and "BRANCH." -->
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>BRANCH</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <!-- Content: Rows of data -->
+            <tr>
+                <td>Alice Johnson</td>
+                <td>20</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Bob Williams</td>
+                <td>21</td>
+                <td>Electrical Engineering</td>
+            </tr>
+            <tr>
+                <td>Charlie Davis</td>
+                <td>19</td>
+                <td>Mechanical Engineering</td>
+            </tr>
+        </tbody>
+    </table>
+
+	<!-- Retaining user's original script reference if needed by the environment -->
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
